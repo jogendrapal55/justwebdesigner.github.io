@@ -1,0 +1,384 @@
+:root{
+    
+    --mainbg:#82589F;
+}
+body{
+    background:#E6E6FA;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.userpic{
+    
+   background:url('profile.jpg') no-repeat -470px -570px;
+   min-height: 150px;
+   min-width: 150px;
+   font-family: 'Anton', sans-serif;
+   background-size: auto;
+   border-radius: 50%;
+   position: relative;
+   box-shadow: 5px 6px 10px 2px #ddd;
+}
+
+.userpic:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0a3d62;
+    mix-blend-mode:hue;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.username{
+    text-align: center;
+}
+
+.username h4, .username p{
+    letter-spacing: 0.3em;
+}
+
+.userdecor{
+    background:var(--mainbg);
+    overflow: hidden;
+}
+
+.userdecor .decor{
+    visibility: hidden;    
+}
+
+
+/*second row decoration*/
+
+.contactInfo,.introInfo{
+    position: relative;
+}
+
+.contactInfo:before, .introInfo:before{
+    content: '';
+    height: 100%;
+    border: 1px solid #2C3A47;
+    display: block;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contactInfo span{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.contactInfo li{
+    position: relative;
+}
+.contactInfo li::before{
+    left: -30px;
+    position: absolute;
+    display:inline-block;    
+    font-family:'FontAwesome';
+    color:var(--mainbg);
+    z-index: 120;    
+    
+}
+
+.contactInfo li:after {
+    content: '';
+    left: -35px;
+    top: 0px;
+    position: absolute;
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    background: #fff;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.contactInfo li:nth-child(1)::before{
+    content:"\f268";
+    top: 0
+ 
+}
+
+.contactInfo li:nth-child(2)::before{
+    content: "\f0e0"; 
+    top: 0px;
+    
+}
+.contactInfo li:nth-child(3)::before{
+    content: '\f095';
+    top:0;
+    font-size:20px;
+}
+.contactInfo li:nth-child(4)::before{
+    content: '\f041';
+    top:0px;
+    font-size:20px;
+}
+
+
+/*main section start here*/
+
+h2.title{
+    color:var(--mainbg);    
+}
+
+.expr{
+    position: relative;
+}
+
+.expr:before, .educ:before{
+    content: '\f0b1';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    display: inline-block;
+    font-family:'FontAwesome';
+    font-size: 32px;
+    color:var(--mainbg);
+}
+
+.educ:before{
+    left: -10px;
+     content: '\f19d';
+    font-family:'FontAwesome';
+}
+
+
+ul.exp, ul.edu{
+    position: relative;
+}
+
+
+ul.exp:before, ul.edu:before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    border: 1px solid #2C3A47;
+    left: -50px;
+    top: 0;
+}
+
+ul.edu:before{
+    left: -25px;
+}
+
+ul.exp li span.designation, ul.edu li span.designation{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+ul.exp li:before, ul.edu li:before{
+    content: '';
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    left:-55px;
+    transform: translateY(10px);
+    border-radius: 50%;
+    background:var(--mainbg);
+    box-shadow:1px 0px 0px 5px #fff;
+}
+
+ul.edu li:before{
+    left: -30px;
+}
+
+ul.exp li span, ul.edu li span{
+    display: block;
+}
+
+
+.skills, .hibbies{
+    position: relative; 
+
+}
+
+.skills:before, .hibbies:before{
+    content: '\f0eb';
+    position: absolute;
+    left: -35px;
+    top: 0;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 42px;
+    color: var(--mainbg);
+}
+
+.hibbies:before{
+    content:'\f004';
+    font-size: 32px;
+    left: -42px;
+}
+
+
+.achiev,.time{
+    position: relative;    
+}
+.achiev:before,.time:before{
+    content: '\f091';
+    position: absolute;
+    left: -67px;
+    top: 0;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 42px;
+    color: var(--mainbg);
+}
+
+.time:before{
+    content: '\f017';
+    left: -45px;
+}
+
+.timeSection{
+    display: flex;
+    justify-content: start;
+}
+
+.maintime{
+    width: 150px;
+    height: 150px;    
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+}
+
+.maintime:before{
+    content: '';
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    display: block;
+    z-index: 20;
+    top: 50%;
+    position: absolute;
+    transform-origin: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.time1{
+    width: 150px;
+    height: 150px;
+    background:#911824;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    z-index: 15;
+}
+
+.time2{
+    width: 150px;
+    height: 150px;
+    background:#d09c9c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(-30deg);
+    z-index: 13;
+}
+.time3{
+    width: 150px;
+    height: 150px;
+    background:#801515;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(30deg);
+    z-index: 12;
+}
+
+.time4{
+    width: 150px;
+    height: 150px;
+    background:#550000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    z-index: 10;
+}
+
+.time5{
+    width: 150px;
+    height: 150px;
+    background:#d46a6a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(140deg);
+    z-index: 9;
+}
+
+.time6{
+    width: 150px;
+    height: 150px;
+    background:#ffaaaa;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(180deg);
+    z-index: 6;
+}
+
+span.alpha{
+    background: #000;
+    display: inline-block;
+    padding: 2px;
+    color: #fff;
+    font-size: 10px;
+    min-width: 18px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+
+
+span.desc{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.mainInfo ul li:nth-child(1) span.alpha{
+    background: #911824
+}
+
+.mainInfo ul li:nth-child(2) span.alpha{
+    background: #d09c9c
+}
+
+.mainInfo ul li:nth-child(3) span.alpha{
+    background: #801515
+}
+
+.mainInfo ul li:nth-child(4) span.alpha{
+    background: #550000
+}
+
+.mainInfo ul li:nth-child(5) span.alpha{
+    background: #d46a6a
+}
+
+.mainInfo ul li:nth-child(6) span.alpha{
+    background: #ffaaaa
+}
